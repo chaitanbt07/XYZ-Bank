@@ -1,4 +1,4 @@
-package com.example.devops.web;
+package com.bank.xyz.web;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +13,7 @@ public class WelcomeController {
 	@RequestMapping("/")
 	public String welcome(Model model) {
 		logger.info("Processing index request");
-		model.addAttribute("course", "DevOps");
+		model.addAttribute("Bank", "XYZ");
 		return "index";
 	}
 }
