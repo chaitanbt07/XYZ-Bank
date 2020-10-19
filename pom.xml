@@ -2,15 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 <!--webhook changes testing to push into the repo   -->
-<<<<<<< HEAD
-	<groupId>com.example</groupId>
-	<artifactId>devops</artifactId>
-	<version>1.0.3-SNAPSHOT</version>
-=======
 	<groupId>com.bank</groupId>
 	<artifactId>xyz</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
->>>>>>> develop
+	<version>1.0.2-XYZBANK</version>
 	<packaging>war</packaging>
 
 	<name>xyz</name>
@@ -33,27 +27,21 @@
 
 	<distributionManagement>
 		<repository>
-			<id>release</id>
+			<id>central</id>
 			<name>releases</name>
-			<url>http://10.7.158.30:8081/artifactory/libs-release-local</url>
+			<url>http://localhost:8081/artifactory/libs-release-local</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshot</id>
 			<name>snapshots</name>
-			<url>http://10.7.158.30:8081/artifactory/libs-snapshot-local</url>
+			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 
 	<scm>
-<<<<<<< HEAD
-		<connection>scm:git:git@github.com:chaitanbt07/devops.git</connection>
-		<developerConnection>scm:git:git@github.com:chaitanbt07/devops.git</developerConnection>
-		<url>git@github.com:chaitanbt07/devops.git</url>
-=======
 		<connection>scm:git:git@github.com:chaitanbt07/xyz.git</connection>
 		<developerConnection>scm:git:git@github.com:chaitanbt07/xyz.git</developerConnection>
 		<url>git@github.com:chaitanbt07/xyz.git</url>
->>>>>>> develop
 		<tag>HEAD</tag>
 	</scm>
 
