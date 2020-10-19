@@ -34,7 +34,7 @@ public class WelcomeControllerTest {
 	@Test
 	public void testWelcome() throws Exception {
 		mockMvc.perform(get("/")).andExpect(status().isOk())
-				.andExpect(model().attribute("bank", containsString("XYZ")));
+				.andExpect(model().attribute("Bank", containsString("XYZ")));
 	}
 
 }
