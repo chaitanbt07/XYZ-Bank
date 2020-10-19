@@ -1,4 +1,4 @@
-package com.example.devops.web;
+package com.bank.xyz.web;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -34,7 +34,7 @@ public class WelcomeControllerTest {
 	@Test
 	public void testWelcome() throws Exception {
 		mockMvc.perform(get("/")).andExpect(status().isOk())
-				.andExpect(model().attribute("course", containsString("DevOps")));
+				.andExpect(model().attribute("Bank", containsString("XYZ")));
 	}
 
 }

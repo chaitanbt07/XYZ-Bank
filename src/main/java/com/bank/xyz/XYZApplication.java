@@ -1,4 +1,4 @@
-package com.example.devops;
+package com.bank.xyz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration;
 
 @SpringBootApplication
 @EnableAutoConfiguration(exclude = { ErrorMvcAutoConfiguration.class })
-public class DevopsApplication {
+public class XYZApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DevopsApplication.class, args);
+		SpringApplication.run(XYZApplication.class, args);
 	}
 }
